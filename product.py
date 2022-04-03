@@ -1,6 +1,9 @@
 
+from unicodedata import category
+
+
 class Product:
-    def __init__(self, product_name):
+    def __init__(self, product_name, price, category):
         self.name = product_name
-        self.price = 0
-        self.category = ""
+        self.price = price
+        self.category = category
